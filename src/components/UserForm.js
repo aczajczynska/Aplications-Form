@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
 import Welcome from './Welcome';
 import FormAnimalDetails from './FormAnimalDetails';
+import Confirm from './Confirm';
 
 export class UserForm extends Component {
     state = {
@@ -67,7 +68,11 @@ handleChange = input => e => {
            values={values}
            />
            case 4:
-           return <h1>Confirm</h1>
+           return <Confirm
+           nextStep={this.nextStep}
+           prevStep={this.prevStep}
+           values={values}
+           />
            case 5:
            return <h1>Success</h1>
            default:

@@ -31,7 +31,7 @@ export class FormAnimalDetails extends Component {
           />
           <br/>
           <TextField
-          hintText="Enter Type od Pet"
+          hintText="Enter Type of Pet"
           floatingLabelText="Type"
           onChange={handleChange('type')}
           defaultValue={values.type}
@@ -50,7 +50,6 @@ export class FormAnimalDetails extends Component {
           style={styles.button}
           onClick={this.back}
           />
-          <br/>
           <RaisedButton
           label="Continue"
           primary={true}
