@@ -18,7 +18,7 @@ export class Success extends Component {
           <h1>Thank You For Your Application!</h1>
         <h3>You will get an email with date od meeting</h3>
         <RaisedButton
-          label="Back"
+          label="Back to first Step"
           primary={false}
           style={styles.button}
           onClick={this.backToOne}
