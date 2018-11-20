@@ -15,7 +15,7 @@ export class Welcome extends Component {
     return (
         <MuiThemeProvider>
         <React.Fragment>
-          <AppBar title="Click button and fill Form to Adopt Pet"/>
+          <AppBar title="Press the button and fill in the form to adopt pet"/>
           <RaisedButton
           label="Click to find friend"
           style={styles.button}

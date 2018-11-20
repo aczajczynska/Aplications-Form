@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
 import Welcome from './Welcome';
+import FormAnimalDetails from './FormAnimalDetails';
 
 export class UserForm extends Component {
     state = {
@@ -9,8 +10,8 @@ export class UserForm extends Component {
         lastName: '',
         email: '',
         number: '',
-        occupation: '',
         city: '',
+        type: '',
         bio: ''
     }
 // precced to next step 
@@ -39,8 +40,8 @@ handleChange = input => e => {
 
     render() {
         const { step } = this.state;
-        const { firstName, lastName, email, number, occupation, city, bio } = this.state;
-        const values = { firstName, lastName, email, number, occupation, city, bio };
+        const { firstName, lastName, email, number, city, type, bio } = this.state;
+        const values = { firstName, lastName, email, number, city, type, bio };
         
         switch(step) {
             case 1: 
@@ -59,7 +60,12 @@ handleChange = input => e => {
                />
            )
            case 3:
-           return <h1>FormAnimalDetails</h1>
+           return <FormAnimalDetails
+           nextStep={this.nextStep}
+           prevStep={this.prevStep}
+           handleChange={this.handleChange}
+           values={values}
+           />
            case 4:
            return <h1>Confirm</h1>
            case 5:
