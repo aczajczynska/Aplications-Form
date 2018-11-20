@@ -34,6 +34,14 @@ prevStep = () => {
     });
 }
 
+stepOne = () => {
+    const { step } = this.state;
+    this.setState({
+        step: step - 4
+    });
+}
+
+
 //handle fields change
 
 handleChange = input => e => {
@@ -75,7 +83,8 @@ handleChange = input => e => {
            values={values}
            />
            case 5:
-           return <Success/>
+           return <Success
+           stepOne={this.stepOne}/>
            default:
            return <h1>Different Case!</h1>
         }
