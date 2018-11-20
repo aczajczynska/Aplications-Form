@@ -61,7 +61,7 @@ export class FormUserDetails extends Component {
           onClick={this.back}
           />
           <RaisedButton
-          label="Continue & Continue"
+          label="Confirm"
           primary={true}
           style={styles.button}
           onClick={this.continue}

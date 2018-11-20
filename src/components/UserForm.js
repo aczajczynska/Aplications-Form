@@ -3,6 +3,7 @@ import FormUserDetails from './FormUserDetails';
 import Welcome from './Welcome';
 import FormAnimalDetails from './FormAnimalDetails';
 import Confirm from './Confirm';
+import Success from './Success';
 
 export class UserForm extends Component {
     state = {
@@ -74,7 +75,7 @@ handleChange = input => e => {
            values={values}
            />
            case 5:
-           return <h1>Success</h1>
+           return <Success/>
            default:
            return <h1>Different Case!</h1>
         }

@@ -1,6 +1,6 @@
 # Application Form
 
-This is a multi step form with React for animal adoption. 
+This is a multi step form with React for animal adoption. It would be great form template for the websites.
 
 ### Technologies
 
